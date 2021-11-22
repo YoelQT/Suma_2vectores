@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		div {
+			text-align: center;
+			font-size: 2em;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<script type="text/javascript">
+			var vector1=[];
+			var vector2=[];
+			var vsuma=[];
+			var suma=0;
+
+			var limite=parseInt(prompt('numero de valores:'));
+			for (var i=0;i<limite;i++){
+				var valor1=parseInt(prompt("valor V1:"))
+				var valor2=parseInt(prompt("valor V2:"))
+
+				// Vectores 1 y 2
+				vector1[i]=valor1;
+				vector2[i]=valor2;
+
+				valores=valor1+valor2;
+				// Suma total
+				suma=suma+valores;
+				// Vector suma
+				vsuma[i]=valores;
+			}
+			document.write("el vector 1: "+vector1);
+			document.write("<br>el vector 2: "+vector2);
+			document.write("<br>el vector suma es: "+vsuma);
+			document.write("<br>La suma total es: ",suma);
+		</script>
+	</div>
+</body>
+</html>
